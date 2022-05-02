@@ -1,0 +1,92 @@
+.hero-section {
+    background-image: url(../../img/main/hero-sec.jpg);
+    background-position-y: center;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 243px;
+    margin-bottom: 96px;
+}
+
+@include retina-bgi{
+    background-image: url(../../img/main/hero-sec@2x.jpg);
+}
+
+.hero-section__box {
+    padding: 56px 55px 0 0;
+    background-color: $color-very-light-grey;
+    max-width: 445px;
+}
+
+.hero-section__desc {
+    @include font-style('Ibarra Real Nova700', 50px, 50px, $color-grayish-dark-blue) {
+        margin-top: 0;
+        margin-bottom: 53px;
+        letter-spacing: -0.446429px;
+    }
+}
+
+@include max(900px) {
+    .hero-section {
+        background-position-x: calc(50% - 34px);
+    }
+}
+
+@include max(768px) {
+    .hero-section {
+        padding-top: 322px;
+    }
+
+    .hero-section__box {
+        max-width: 514px;
+    }
+
+    .hero-section__desc { 
+        font-size: 40px;
+        line-height: 42px;
+        letter-spacing: -0.357143px;
+        margin-bottom: 48px;
+    }
+}
+
+@include max(750px) {
+    .hero-section {
+        padding-top: 180px;
+        background-position: calc(50% - 25px);
+    }
+}
+
+@include max(600px) {
+    .hero-section {
+        background-size: contain;
+        padding-top: 300px;
+        background-position-y: 0;
+        background-position-x: center;
+        position: relative;
+    }
+
+    .hero-section__box {
+        top: 100%;
+        max-width: 370px;
+        position: absolute;
+        padding: 0;
+    }
+}
+
+@include max(500px) {
+    .hero-section {
+        padding-top: 250px;
+    }
+}
+
+@include max(500px) {
+    .hero-section {
+        padding-top: 200px;
+    }
+}
+
+@include max(375px) {
+    .hero-section__desc { 
+        margin-bottom: 32px;
+    }
+}

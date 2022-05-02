@@ -1,0 +1,43 @@
+.button-primary {
+    display: inline-flex;
+    align-items: center;
+    background-color: $color-dark-blue;
+    color: $color-slightly-desaturated-cyan;
+    text-decoration: none;
+}
+
+.button-primary__box {
+    padding: 18px 16px;
+    background-color: rgba($color: #000000, $alpha: 0.1);
+}
+
+.button-primary__desc {
+    @include font-style('Public Sans400', 12px, 14px, #FFF) {
+        margin: 0;
+        padding: 0 36px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+}
+
+.button-primary:hover {
+    background-color: $color-slightly-desaturated-cyan;
+    color: #FFF;
+}
+
+.button-primary:disabled {
+    opacity: 0.2;
+}
+
+// <a class="button-primary" href="#">
+//     <div class="button-primary__box">
+//         <svg class="button-primary__icon" width="18"  stroke="currentcolor" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+//             <g id="Group 3">
+//             <path id="Path 6" d="M1 9L9 13L17 9"/>
+//             <path id="Path 6 Copy" opacity="0.5" d="M1 5L9 9L17 5" />
+//             <path id="Path 6 Copy 2" opacity="0.25" d="M1 1L9 5L17 1"/>
+//             </g>
+//         </svg>
+//     </div>
+//     <p class="button-primary__desc">ABOUT ME</p>
+// </a>

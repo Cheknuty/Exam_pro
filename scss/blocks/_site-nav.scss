@@ -1,0 +1,25 @@
+.site-nav__list {
+    @include list-unstyled;
+    display: flex;
+    align-items: center;
+}
+
+.site-nav__item:not(:last-child) {
+    margin-right: 42px;
+}
+
+.site-nav__item-link {
+    @include font-style('Public Sans400', 12px, 14px, $color-grayish-dark-blue){
+        text-decoration: none;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+}
+
+.site-nav__item-link--white{
+    color: #FFF;
+}
+
+.site-nav__item-link--active {
+    color: $color-slightly-desaturated-cyan;
+}

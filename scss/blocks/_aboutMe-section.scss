@@ -1,0 +1,57 @@
+.aboutMe-section {
+    padding-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.aboutMe-section__box {
+    border-top: 1px solid rgba($color: $color-grayish-dark-blue, $alpha: 0.15);
+    border-bottom: 1px solid rgba($color: $color-grayish-dark-blue, $alpha: 0.15);
+    max-width: 350px;
+    padding: 50px 0;
+}
+
+.aboutMe-section__title {
+    @include font-style('Ibarra Real Nova700', 40px, 42px, $color-grayish-dark-blue) {
+        margin-top: 0;
+        margin-bottom: 28px;
+        letter-spacing: -0.357143px;
+    }
+}
+
+.aboutMe-section__subtitle {
+    @include font-style('Public Sans400', 16px, 30px, rgba($color: $color-grayish-dark-blue, $alpha: 0.8)) {
+        margin-top: 0;
+        margin-bottom: 24px;
+    }
+}
+
+@include max(678px) {
+    .aboutMe-section {
+        flex-direction: column;
+    }
+
+    .aboutMe-section__img {
+        margin-bottom: 32px;
+        max-width: 540px;
+    }
+
+    .aboutMe-section__box {
+        padding: 32px 0 50px 0;
+        max-width: 540px;
+    }
+}
+
+@include max(600px) {
+    .aboutMe-section {
+        padding-top: 200px;
+        text-align: center;
+    }
+}
+
+@include max(330px) {
+    .aboutMe-section {
+        padding-top: 220px;
+    }
+}

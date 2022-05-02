@@ -1,0 +1,17 @@
+.social-box {
+    display: flex;
+    align-items: center;
+}
+
+.social-box__link {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.social-box__link:not(:last-child) {
+    margin-right: 15px;
+}
+
+.social-box__link--black {
+    color: $color-grayish-dark-blue;
+}

@@ -1,0 +1,18 @@
+.button-secondary {
+    @include font-style('Public Sans400', 12px, 14px, $color-grayish-dark-blue) {
+        display: inline-block;
+        padding: 17px 34px;
+        border: 1px solid $color-grayish-dark-blue;
+        text-decoration: none;
+    }
+}
+
+.button-secondary:hover {
+    background-color: $color-grayish-dark-blue;
+    color: $color-very-light-grey;
+}
+
+.button-secondary:disabled {
+    opacity: 0.2;
+}
+
